@@ -1,0 +1,53 @@
+1. category -- the essence of composition
+
+C:
+
+	// have a function that takes value a type A, returns type B
+
+	B f(A a)
+
+	// another one
+
+	C g(B b)
+
+	// g circ f is 
+
+	C g_after_f(A a)
+	{
+		return g(f(a));
+	}
+
+Haskell:	(double colon means "has the type of")
+
+	f :: A -> B
+
+	g :: B -> C
+
+	g . f
+
+Scala:
+
+	val f: A => B
+
+	val g: B => C
+
+	g compose f
+
+ASSOCIATIVITY
+
+	/**/
+
+IDENTITY
+
+C++:
+
+	template<class T> id(T x) { return x; }
+
+Haskell: has identity function defined in prelude:
+
+	id :: a -> a
+	id x = x
+
+Scala: 
+
+	def identity[A](a: A): A = a
