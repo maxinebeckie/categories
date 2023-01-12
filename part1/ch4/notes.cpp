@@ -64,7 +64,7 @@ Writer<string> toUpper(string s) {
 }
 
 Writer<vector<string>> toWords(string s) {
-	return make_pair(words(s), "toWords );
+	return make_pair(words(s), "toWords" );
 }
 
 // we want to compose these functions. how?
