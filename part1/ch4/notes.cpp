@@ -51,7 +51,7 @@ vector<string> words(string s) {
 }
 
 // toWords takes a string and splits it into words. 
-/let's embellish the toWords and toUpper functions from notes.c
+//let's embellish the toWords and toUpper functions from notes.c
 
 template<class A>
 using Writer = pair<A, string>;
